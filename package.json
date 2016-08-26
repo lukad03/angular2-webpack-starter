@@ -90,7 +90,7 @@
     "@types/webpack": "^1.12.29",
     "angular2-hmr": "~0.8.0",
     "awesome-typescript-loader": "1.1.1",
-    "codelyzer": "~0.0.21",
+    "codelyzer": "~0.0.27",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.24.0",
     "es6-promise-loader": "^1.0.1",
