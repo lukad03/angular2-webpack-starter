@@ -38,10 +38,10 @@ module.exports = function(config) {
 
     coverageReporter: {
       dir : 'coverage/',
+      subdir: '.',
       reporters: [
         { type: 'text-summary' },
-        { type: 'json' },
-        { type: 'html' }
+        { type: 'lcov' }
       ]
     },
 
@@ -54,7 +54,7 @@ module.exports = function(config) {
      * possible values: 'dots', 'progress'
      * available reporters: https://npmjs.org/browse/keyword/karma-reporter
      */
-    reporters: [ 'mocha', 'coverage' ],
+    reporters: ['story', 'coverage', 'progress'],
 
     // web server port
     port: 9876,
@@ -75,9 +75,7 @@ module.exports = function(config) {
      * start these browsers
      * available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
      */
-    browsers: [
-      'Chrome'
-    ],
+    browsers: ['PhantomJS'],
 
     customLaunchers: {
       Chrome_travis_ci: {

@@ -1,0 +1,7 @@
+dependencies:
+  cache_directories:
+    - "node_modules"
+test:
+  post:
+    - npm install codeclimate-test-reporter
+    - codeclimate-test-reporter < coverage/lcov.info
